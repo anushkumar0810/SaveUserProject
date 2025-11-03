@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background_1"
+    tools:context=".activities.MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        app:cardCornerRadius="15dp"
+        android:backgroundTint="@color/white_stable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="@string/save_user"
+                android:textColor="@color/black_stable"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/firstNameEdt"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/edt_bg"
+                android:hint="@string/enter_your_first_name"
+                android:textColorHint="@color/hint_color"
+                android:paddingHorizontal="15dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins"
+                android:textSize="16sp"
+                android:inputType="textCapSentences"
+                android:textColor="@color/black_stable"/>
+
+            <EditText
+                android:id="@+id/lastNameEdt"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/edt_bg"
+                android:hint="@string/enter_your_last_name"
+                android:textColorHint="@color/hint_color"
+                android:paddingHorizontal="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins"
+                android:textSize="16sp"
+                android:inputType="textCapSentences"
+                android:textColor="@color/black_stable"/>
+
+            <EditText
+                android:id="@+id/ageEdt"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/edt_bg"
+                android:hint="@string/enter_your_age"
+                android:textColorHint="@color/hint_color"
+                android:paddingHorizontal="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins"
+                android:textSize="16sp"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/black_stable"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/saveUserBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg"
+                    android:text="@string/save"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/showUsersBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg"
+                    android:text="@string/show_users"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

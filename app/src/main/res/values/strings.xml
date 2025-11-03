@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ProjectSaveUser</string>
+    <string name="app_name1">Save User</string>
+    <string name="enter_your_first_name">Enter your first name</string>
+    <string name="enter_your_last_name">Enter your last name</string>
+    <string name="enter_your_age">Enter your age</string>
+    <string name="show_users">Show Users</string>
+    <string name="save">Save</string>
+    <string name="save_user_project">Save User Project</string>
+    <string name="save_user">Save User</string>
+    <string name="large_description">This app allows users to save their first name, last name, and age. After saving the details, the list of users can be viewed by selecting the “Show Users” option. The application is fully developed in Android Studio using the Kotlin programming language.</string>
+    <string name="let_s_go">Let\'s Go...</string>
+    <string name="no_users_found">No Users Found!</string>
+</resources>
